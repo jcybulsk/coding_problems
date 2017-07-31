@@ -7,6 +7,8 @@ def max_to_choose(arr):
     # number above. Then, after checking all the numbers in 
     # the input array, and adding one in the appropriate 
     # indices, I simply return the maximum count.
+    # (note that we're given in the problem statement that 
+    # the range of possible numbers is 1-99 inclusive)
     counts = [0]*99
     for i in range(len(arr)):
         if arr[i] > 98:
